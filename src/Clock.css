@@ -1,0 +1,9 @@
+div.Clock p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.Clock {
+    color: #BDBDBD;
+}

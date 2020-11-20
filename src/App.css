@@ -1,0 +1,87 @@
+.App {
+  background-color: #a5e9db;
+  background-size: 25px 25px;
+  box-shadow: 4px 3px 7px 2px #BDBDBD;
+  border-radius: 20px;
+  padding: 2%;
+  box-sizing: border-box;
+  font-family: 'Proza Libre', sans-serif;
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+}
+
+.App .header {
+  background-color: #415b90;
+  color: #f8ed86;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+.App h1 {
+  padding: 1%;
+}
+
+/* NewTask input bar CSS */
+
+.NewTask form {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 70% 30%;
+}
+
+.NewTask input {
+  border-radius: 5px;
+}
+
+.NewTask button, .TasksList button {
+  font-family: 'Proza Libre', sans-serif;
+  box-shadow: 0 2px 0 #415b90;
+  background-color: #2ca4bf;
+  margin: 10px 5px;
+}
+
+.NewTask .taskNotes textarea {
+  width: 100%;
+}
+
+/* Submitted To-Do List CSS */
+
+.TasksList {
+  margin: 10px 0px;
+}
+
+.TasksList ol {
+  padding: 0;
+}
+
+.TasksList ol li {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 10px 0;
+  border: 1px solid #415b90;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 5px;
+}
+
+.TasksList .title {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+@media all and (max-width: 768px) {
+  .TasksList ol li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0px;
+  }
+  .TasksList button .delete {
+    margin-left: 0;
+    margin-bottom: 1%;
+  }
+}
